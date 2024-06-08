@@ -1,0 +1,84 @@
+@media only screen and (max-width: 568px) {
+  body
+  {background-color:lightyellow; } 
+    #top-header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+
+        padding: 1rem 0;
+    }
+    #top-header .heading-text {
+        display: none;
+    }
+    #top-header .main-heading {
+        padding-left: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+
+        display: inline;
+    }
+    #top-header .heading-start,
+    #top-header .heading-end {
+        font-size: 1em;
+        line-height: 1em;
+
+        display: inline;
+    }
+    .heading-start {
+        transform: translateX(0);
+    }
+    .heading-end {
+        transform: translateX(0);
+        text-align: left;
+    }
+    .main-container {
+        grid-template-rows: 3.5rem calc(100% - 3.5rem);
+    }
+    .padding-container {
+        grid-template-rows: calc(100% - 3rem) 3rem;
+    }
+    .sub-container {
+        grid-template-rows: 20% 80%;
+    }
+    #navbar {
+        padding: 1rem 0;
+    }
+
+    #navbar header {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    #navbar a {
+        padding: 0rem 1rem;
+    }
+    #main-doc {
+        padding: 0rem 1rem 2rem 1rem;
+    }
+    #main-doc h2 {
+        font-size: 1.4rem;
+
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    #main-doc > .main-section:first-of-type h2 {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+    #main-doc h3 {
+        font-size: 1.25rem;
+
+        padding-top: 1.5rem;
+    }
+    aside {
+        margin-bottom: 0.5rem;
+    }
+    footer {
+        font-size: 0.8rem;
+        line-height: 1rem;
+
+        margin-top: 0.5rem;
+    }
+
+
+    
+}
