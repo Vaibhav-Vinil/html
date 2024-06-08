@@ -1,0 +1,71 @@
+<!THIS IS A SURVEY FORM>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+
+
+
+
+
+
+  <body>
+    <h1 id="title">FORM SUBMISSION</h1>
+    <p id="description">Please enter the details</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="nnc"></label>
+     
+        <label id="email-label">Enter Your Email: <input placeholder="Enter your Email" id="email" name="email" type="email" required /></label>
+         <label id="number-label">Input your age (years): <input placeholder="Age" id="number" type="number" name="age" min="13" max="120" /></label>
+        
+      </fieldset>
+
+
+
+
+       <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+
+
+
+
+
+
+      <fieldset>
+        <label for="personal-account" ><input value="personalacc" id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="business-account" ><input value="bussinessacc" id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input value="tos" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="read">
+          <input value="rtos"id="read" type="checkbox" required name="read" class="inline" /> I have read the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+       
+       
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+
+
